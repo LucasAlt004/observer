@@ -1,3 +1,8 @@
 <app-teste />
 <app-teste-novo />
+
+@for (movie of movies; track $index) {
+<p>{{ movie | json }}</p>
+}
+
 <router-outlet />
