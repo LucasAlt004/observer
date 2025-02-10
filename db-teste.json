@@ -1,0 +1,13 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "movieId": 550,
+      "author": "João Silva",
+      "rating": 9,
+      "reviewContent": "Um filme incrível com reviravoltas inesperadas!",
+      "reviewDate": "2025-02-10T14:30:00Z",
+      "watchedDate": "2025-02-05T20:00:00Z"
+    }
+  ]
+}

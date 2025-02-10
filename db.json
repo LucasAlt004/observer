@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "João das neves",
+      "email": "teste@teste.com"
+    },
+    {
+      "id": 2,
+      "name": "João das neveseeeee",
+      "email": "teste@teste.com"
+    },
+    {
+      "id": "db0f",
+      "headers": {
+        "normalizedNames": {},
+        "lazyUpdate": null
+      }
+    },
+    {
+      "id": "4c10",
+      "user": {
+        "name": "JONAS",
+        "email": "judson@lontano.jonas"
+      }
+    },
+    {
+      "id": "97e1",
+      "name": "JONAS",
+      "email": "judson@lontano.jonas"
+    },
+    {
+      "id": "7342",
+      "name": "JONAS",
+      "email": "judson@lontano.jonas"
+    }
+  ]
+}

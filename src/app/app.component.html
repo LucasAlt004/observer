@@ -1,8 +1,41 @@
-<app-teste />
-<app-teste-novo />
+<form [formGroup]="meuFormulario" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Nome </label>
+    <input
+      type="text"
+      formControlName="name"
+      [(ngModel)]="nameModel"
+      name="name"
+      id="name"
+    />
+    <p
+      *ngIf="
+        meuFormulario.get('name')?.invalid && meuFormulario.get('name')?.touched
+      "
+    >
+      O nome é obrigatório e deve ter no mínimo 3 caracteres.
+    </p>
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input
+      type="email"
+      formControlName="email"
+      [(ngModel)]="emailModel"
+      name="email"
+      id="email"
+    />
+    <p
+      *ngIf="
+        meuFormulario.get('email')?.invalid &&
+        meuFormulario.get('email')?.touched
+      "
+    >
+      Insira um e-mail válido.
+    </p>
+  </div>
 
-@for (movie of movies; track $index) {
-<p>{{ movie | json }}</p>
-}
+  <button type="submit" [disabled]="formInvalido">Enviar</button>
+</form>
 
 <router-outlet />
